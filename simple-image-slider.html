@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Image Slider</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .slider {
+            width: 90%;
+            max-width: 600px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .slides {
+            display: flex;
+            width: 400%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slides img {
+            width: 100%;
+            flex: 1 0 100%;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        .navigation-manual {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .manual-btn {
+            border: 2px solid #333;
+            padding: 5px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        #slide1:checked~.slider .slides {
+            transform: translateX(0%);
+        }
+
+        #slide2:checked~.slider .slides {
+            transform: translateX(-100%);
+        }
+
+        #slide3:checked~.slider .slides {
+            transform: translateX(-200%);
+        }
+
+        #slide4:checked~.slider .slides {
+            transform: translateX(-300%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Image Slider</h1>
+
+    <input type="radio" name="slider" id="slide1" checked>
+    <input type="radio" name="slider" id="slide2">
+    <input type="radio" name="slider" id="slide3">
+    <input type="radio" name="slider" id="slide4">
+
+    <div class="slider">
+        <div class="slides">
+            <img src="https://placehold.co/600x300?text=Slide+1" alt="Slide 1">
+            <img src="https://placehold.co/600x300?text=Slide+2" alt="Slide 2">
+            <img src="https://placehold.co/600x300?text=Slide+3" alt="Slide 3">
+            <img src="https://placehold.co/600x300?text=Slide+4" alt="Slide 4">
+        </div>
+    </div>
+
+    <div class="navigation-manual">
+        <label for="slide1" class="manual-btn"></label>
+        <label for="slide2" class="manual-btn"></label>
+        <label for="slide3" class="manual-btn"></label>
+        <label for="slide4" class="manual-btn"></label>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+</head>
+
+<body>
+    <h1>Website Feedback Form</h1>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <p>How would you rate your experience?</p>
+        <input type="radio" id="excellent" name="rating" value="Excellent">
+        <label for="excellent">Excellent</label><br>
+        <input type="radio" id="good" name="rating" value="Good">
+        <label for="good">Good</label><br>
+        <input type="radio" id="poor" name="rating" value="Poor">
+        <label for="poor">Poor</label><br><br>
+
+        <label for="features">Which features did you use?</label><br>
+        <input type="checkbox" id="blog" name="features" value="Blog">
+        <label for="blog">Blog</label><br>
+        <input type="checkbox" id="forum" name="features" value="Forum">
+        <label for="forum">Forum</label><br>
+        <input type="checkbox" id="docs" name="features" value="Documentation">
+        <label for="docs">Documentation</label><br><br>
+
+        <label for="suggestion">What would you like us to improve?</label><br>
+        <select id="suggestion" name="suggestion">
+            <option value="design">Design</option>
+            <option value="content">Content</option>
+            <option value="navigation">Navigation</option>
+            <option value="performance">Performance</option>
+        </select><br><br>
+
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="5" cols="30"></textarea><br><br>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+</body>
+
+</html>

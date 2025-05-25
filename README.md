@@ -74,6 +74,6 @@ This project is open source and free to use under the MIT License.
 
 ## 🌐 Article
 Read the full tutorial with explanations and code at:
-👉 https://www.djamware.com/
+👉 [https://www.djamware.com/](https://www.djamware.com/post/6833060549c01e5001aa86ae/25-html-projects-for-beginners-with-source-code)
 
 Happy coding! 💻🚀
